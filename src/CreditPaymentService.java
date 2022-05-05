@@ -1,7 +1,7 @@
 public class CreditPaymentService {
     public void monthlyPayment(double amount, double years, double percent) {
         double months = years * 12;
-        double i = percent / 100 / months; //Процентная ставка в месяц
+        double i = percent / 100 / 12; //Процентная ставка в месяц
         double x = 1 + i;
         double r = months * (-1);
         double y = Math.pow(x, r);
